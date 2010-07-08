@@ -1,7 +1,7 @@
 %div{:id => 'header', :class => 'landing'} 
   #utilnav
     %ul
-      %li
+      %li{:class => 'search'}
         %a{:href => '#'}= 'Search'
       %li
         %a{:href => '#'}= 'Newsletter Signup'
@@ -21,3 +21,10 @@
         %a{:href => '#'}= 'Contributors'
       %li
         %a{:href => '#'}= 'Events'
+
+  %div{:class=>'headercallout listen'}
+    %div{:class=>'title'}
+      %span= 'Listen'
+      %a{:class=>'viewall', :href=>'#'}
+        %img{:src=>'/images/title-all-songs.png'}
+    %div= 'here is some text'
