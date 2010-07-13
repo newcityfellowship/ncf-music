@@ -2,14 +2,24 @@ html, body, #wrapper
   height: 100%
 
 body
-  color: #000
+  color: #333
   font-family: Helvetica, Arial
-  font-size: 14px
+  font-size: 12px
   background-image: url(/images/bg.jpg)
   background-repeat: no-repeat
   background-position: center top
   background-color: #c8c8c8
-  
+
+h3, h3 a
+  font-size: 18px
+  font-weight: bold
+  color: #333333
+  text-decoration: none
+  display: block  
+
+p, h3, h3 a
+  margin-bottom: 5px
+
 #wrapper
   width: 990px
   background-color: #FFFFFF
@@ -22,19 +32,20 @@ body
   border-top: none
   border-bottom: none
 
+#header, #content
+  width: 950px
+  margin-left: auto
+  margin-right: auto
 
 #header
   background-image: url(/images/hero-1.jpg)
   background-repeat: no-repeat
   background-position: center top
-  width: 950px
-  margin-left: auto
-  margin-right: auto
 
-.landing
+#header.home
   height: 473px
 
-.interior
+#header.interior
   height: 273px
 
 #nav
@@ -99,10 +110,12 @@ body
 
 .headercallout
   width: 260px
-  height: 180px
-  margin-top: 150px
-  margin-left: 15px
+  margin-top: 135px
+  margin-left: 20px
   background-color: #ffffff
+
+#content
+  margin-top: 20px
 
 .title
   background-image: url(/images/title-bg.png)
@@ -121,4 +134,78 @@ body
 .title .viewall
   float: right
   border: none
- 
+
+.audioplay
+  width: 20px
+  height: 20px
+  border: none
+  float: left
+  background-color: #333333
+  margin-top: 5px
+  margin-right: 10px
+
+.headercallout li
+  padding-left: 10px
+  padding-right: 10px
+  padding-top: 10px
+  padding-bottom: 10px
+  border-bottom: 1px solid #e3e3e3
+
+.headercallout li h3
+  font-size: 15px
+  color: #333333
+  font-weight: bold
+
+.headercallout li a
+  text-transform: uppercase
+  text-decoration: underline
+  font-size: 10px
+  font-weight: bold
+  color: #666666
+
+.headercallout li a:hover
+  color: #bc5400
+
+
+.headercallout .last
+  margin: 0
+  padding: 0
+  border: none
+  background-color: #e3e3e3
+  height: 26px
+
+.headercallout .last img
+  margin: none
+
+.headercallout .last a
+  margin: none
+  padding: none
+
+.home #leftcallout
+  width: 367px
+  float: left
+
+.home #rightcol
+  margin-left: 387px
+
+.home #rightcol #learn
+  width: 368px
+  float: left
+
+.home #rightcol #learn ul li
+  border-bottom: 1px solid #e3e3e3
+  padding-top: 10px
+  padding-bottom: 10px
+  
+
+.home #rightcol #ad
+  float: right
+
+.home #rightcol #findasong
+  border: 1px solid blue
+  background-color: #eeeeee
+  height: 76px
+  width: 100%
+  float: left
+  margin-top: 10px
+  

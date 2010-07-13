@@ -1,4 +1,4 @@
-%div{:id => 'header', :class => 'landing'} 
+%div{:id => 'header', :class => 'home'} 
   #utilnav
     %ul
       %li{:class => 'search'}
@@ -27,4 +27,52 @@
       %span= 'Listen'
       %a{:class=>'viewall', :href=>'#'}
         %img{:src=>'/images/title-all-songs.png'}
-    %div= 'here is some text'
+    %ul{:class=>'contents'}
+      %li
+        %button{:class=>'audioplay'}
+        %h3= 'Death Is Ended'
+        %a{:href=>'#'}= 'New City Fellowship, Glenwood'
+      %li
+        %button{:class=>'audioplay'}
+        %h3= 'I Am The Door'
+        %a{:href=>'#'}= 'New City Fellowship, Glenwood'
+      %li
+        %button{:class=>'audioplay'}
+        %h3= 'Let The People Praise Him'
+        %a{:href=>'#'}= 'New City Fellowship, Glenwood'
+      %li{:class=>'last'}
+        %a{:href=>'#'}
+          %img{:src=>'/images/subscribe-podcast-small-callout.png'}
+
+%div{:id => 'content',:class=>'home'}
+  #leftcallout
+    %div{:class=>'title'}
+      %span= 'Watch'
+      %a{:class=>'viewall', :href=>'#'}
+        %img{:src=>'/images/title-all-videos.png'}
+    <object width="367" height="208"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6102370&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6102370&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="367" height="208"></embed></object>
+    %h3
+      %a{:href=>'#'}= 'Banyamulenge Christmas Song'
+    %p= 'This is a Christmas song that was sung this past year for a candlelight service at New City St. Louis'
+
+  #rightcol
+    #learn
+      %div{:class=>'title'}
+        %span= 'Learn'
+        %a{:class=>'viewall', :href=>'#'}
+          %img{:src=>'/images/title-all-articles.png'}
+      %ul
+        %li
+          %h3
+            %a{:href=>'#'}= 'Our Worship Seeks to be Cross-Cultural'
+          %p= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque risus, aliquet a vulputate in, imperdiet non nunc. Maecenas non odio elit, a varius purus.'
+        %li
+          %h3
+            %a{:href=>'#'}= 'Our Worship Seeks to be Cross-Cultural'
+          %p= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque risus, aliquet a vulputate in, imperdiet non nunc. Maecenas non odio elit, a varius purus.'
+    #ad
+      %a{:href=>'#'}
+        %img{:src=>'/images/music-conference.png'}
+    #findasong
+      %h2= 'Find A Song'
+  
