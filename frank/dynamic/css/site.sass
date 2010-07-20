@@ -1,5 +1,6 @@
-html, body, #wrapper
+html
   height: 100%
+
 
 body
   color: #333
@@ -20,6 +21,9 @@ h3, h3 a
 p, h3, h3 a
   margin-bottom: 5px
 
+break
+  clear: both
+
 #wrapper
   width: 990px
   background-color: #FFFFFF
@@ -32,10 +36,18 @@ p, h3, h3 a
   border-top: none
   border-bottom: none
 
-#header, #content
+#header, #content, #footer
   width: 950px
   margin-left: auto
   margin-right: auto
+
+#footer
+  padding-top: 10px
+  padding-bottom: 10px
+  text-align: right
+  color: #E8E8E8
+  border-top: 2px solid #E8E8E8
+  margin-top: 10px
 
 #header
   background-image: url(/images/hero-1.jpg)
@@ -116,6 +128,7 @@ p, h3, h3 a
 
 #content
   margin-top: 20px
+  margin-bottom: 0px
 
 .title
   background-image: url(/images/title-bg.png)
@@ -190,22 +203,27 @@ p, h3, h3 a
 
 .home #rightcol #learn
   width: 368px
-  float: left
+  height: 234px
+  overflow: hidden
+
+#findasong
 
 .home #rightcol #learn ul li
   border-bottom: 1px solid #e3e3e3
   padding-top: 10px
   padding-bottom: 10px
-  
 
 .home #rightcol #ad
   float: right
+  height: 234px
 
 .home #rightcol #findasong
-  border: 1px solid blue
+  margin-top: 20px
+  clear: right
+  padding: 10px
+
+#findasong
   background-color: #eeeeee
-  height: 76px
-  width: 100%
-  float: left
-  margin-top: 10px
-  
+
+#findasong h2
+  color: #bc5400

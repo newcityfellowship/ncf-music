@@ -56,6 +56,9 @@
     %p= 'This is a Christmas song that was sung this past year for a candlelight service at New City St. Louis'
 
   #rightcol
+    #ad
+      %a{:href=>'#'}
+        %img{:src=>'/images/music-conference.png'}
     #learn
       %div{:class=>'title'}
         %span= 'Learn'
@@ -70,9 +73,16 @@
           %h3
             %a{:href=>'#'}= 'Our Worship Seeks to be Cross-Cultural'
           %p= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque risus, aliquet a vulputate in, imperdiet non nunc. Maecenas non odio elit, a varius purus.'
-    #ad
-      %a{:href=>'#'}
-        %img{:src=>'/images/music-conference.png'}
     #findasong
       %h2= 'Find A Song'
-  
+      %form{:action=>'#', :method=>'get'}
+        %div{:class=>'typechooser'}
+          %input{:type=>'radio',:name=>'type',:value=>'Sheet Music'}
+          %span= 'Sheet Music'
+          %input{:type=>'radio',:name=>'type',:value=>'Lyrics'}
+          %span= 'Lyrics'
+          %input{:type=>'radio',:name=>'type',:value=>'Overhead Slides'}
+          %span= 'Overhead Slides'
+        %input{:type=>'text',:name=>'q',:value=>'Album, Artist, or Song Name'}
+#footer
+  %div= '&copy; 2010 New City Fellowship, All Rights Reserved'
