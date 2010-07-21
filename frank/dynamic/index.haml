@@ -74,7 +74,6 @@
             %a{:href=>'#'}= 'Our Worship Seeks to be Cross-Cultural'
           %p= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque risus, aliquet a vulputate in, imperdiet non nunc. Maecenas non odio elit, a varius purus.'
     #findasong
-      %h2= 'Find A Song'
       %form{:action=>'#', :method=>'get'}
         %div{:class=>'typechooser'}
           %input{:type=>'radio',:name=>'type',:value=>'Sheet Music'}
@@ -83,6 +82,7 @@
           %span= 'Lyrics'
           %input{:type=>'radio',:name=>'type',:value=>'Overhead Slides'}
           %span= 'Overhead Slides'
-        %input{:type=>'text',:name=>'q',:value=>'Album, Artist, or Song Name'}
-#footer
-  %div= '&copy; 2010 New City Fellowship, All Rights Reserved'
+        %h2= 'Find A Song'
+        %div{:class=>'searchwrap'}
+          %input{:type=>'text',:class=>'searchtext',:name=>'q',:value=>'Album, Artist, or Song Name'}
+          %input{:type=>'image',:src=>'/images/search-icon2.png',:class=>'searchbutton',:name=>'submit'}  
