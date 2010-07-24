@@ -58,12 +58,13 @@ break
   margin-top: 0px
 
 #header
-  background-image: url(/images/hero-1.jpg)
   background-repeat: no-repeat
   background-position: center top
 
 #header.home
   height: 473px
+  background-image: url(/images/home-header-8.jpg)
+	
 
 #header.interior
   height: 273px
@@ -87,7 +88,7 @@ break
 #nav ul li a
   text-decoration: none
   text-transform: uppercase
-  font-size: 12px
+  font-size: 13px
   color: #333333
   font-weight: bold
 
@@ -117,16 +118,34 @@ break
   font-weight: bold
 
 #utilnav ul li.search
-  width: 60px
+  width: 370px
   padding-right: 10px
   text-align: right
   border-right: 1px solid #fff
+
+#utilnav ul li.search a
   background-image: url(/images/search-icon1.png)
   background-repeat: no-repeat
   background-position: left
+  padding-left: 15px
 
 #utilnav ul li a:hover
   color: #CCCCCC
+
+#utilnav .search .searchbox
+  float: right
+  display: none
+  margin-top: -3px
+
+#utilnav .search .searchbox input
+  border: none
+  width: 206px
+  height: 24px
+  margin-left: 7px
+  padding-left: 7px
+  padding-right: 7px
+  color: #666
+  font-size: 10px
 
 .headercallout
   width: 260px
@@ -205,6 +224,12 @@ break
 .home #leftcallout
   width: 367px
   float: left
+
+.home #leftcallout .title
+  margin-bottom: 5px
+
+.home #leftcallout h3
+  margin-top: 7px
 
 .home #rightcol
   margin-left: 387px

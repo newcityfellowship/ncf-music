@@ -3,6 +3,9 @@
     %ul
       %li{:class => 'search'}
         %a{:href => '#'}= 'Search'
+        %div{:class=>'searchbox'}
+          %form{:method=>'GET', :action=>'#'}
+            %input{:type=>'text',:name=>'q'}
       %li
         %a{:href => '#'}= 'Newsletter Signup'
   #nav
