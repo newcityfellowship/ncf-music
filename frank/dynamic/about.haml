@@ -1,0 +1,58 @@
+%div{:id => 'header', :class => 'interior about'} 
+  #utilnav
+    %ul
+      %li{:class => 'search'}
+        %a{:href => '#'}= 'Search'
+        %div{:class=>'searchbox'}
+          %form{:method=>'GET', :action=>'#'}
+            %input{:type=>'text',:name=>'q'}
+      %li
+        %a{:href => '#'}= 'Newsletter Signup'
+  #nav
+    #homelink
+    %ul
+      %li
+        %a{:href => '/about',:class=>'selected'}= 'About'
+      %li
+        %a{:href => '/listen'}= 'Listen'
+      %li
+        %a{:href => '/watch'}= 'Watch'
+      %li
+        %a{:href => '/learn'}= 'Learn'
+      %li
+        %a{:href => '/songs'}= 'Songs'
+      %li
+        %a{:href => '/contributors'}= 'Contributors'
+      %li
+        %a{:href => '/events'}= 'Events'
+
+%div{:id => 'content',:class=>'interior about'}
+  %h2{:class=>'pagename'}
+    About
+    %span{:class=>'textlogo'}
+      New City
+      %strong= 'Music'
+
+  %div{:class=>'contact navcol'}
+    %div{:class=>'title'}
+      %span= 'Contact'
+    %ul{:class=>'contents'}
+      %li
+        %h3
+          James Ward
+          %span{:class=>'role'}= 'music director'
+        %div{:class=>'phone'}= '423-222-2222'
+        %div{:class=>'email'}
+          %a{:href=>'mailto:jamesward@ncfmusic.com'}= 'jamesward@ncfmusic.com'
+      %li
+        %h3
+          New City Fellowship Glenwood
+        %div{:class=>'address'}= '2412 East 4th St.<br />Chattanooga, Tennessee 37494'
+
+  %img{:class=>'colphoto',:src=>'/images/jim-piano.png'}
+
+  %div{:class=> 'articlebody'}
+    %p
+      Our worship seeks to be cross-cultural yet flowing out of our Reformed tradition. This means that we understand God to be the audience of our worship. We seek to please Him. Our understanding of the "Regulative Principal of Worship" is that all that we can do in worship must be biblical. We believe that we are to be courageous to use all of ourselves in worship, so we follow the teachings of the Psalms to use our bodies in such things as clapping, raising our hands, shouting and dancing. The Psalms teach us to use instruments and to call on everything that has breath to praise the Lord. We do not think that being truly Reformed means to only use a Northern European 16th century cerebral style and functional order to worship God.
+    %p
+      Our worship seeks to be cross-cultural yet flowing out of our Reformed tradition. This means that we understand God to be the audience of our worship. We seek to please Him. Our understanding of the "Regulative Principal of Worship" is that all that we can do in worship must be biblical. We believe that we are to be courageous to use all of ourselves in worship, so we follow the teachings of the Psalms to use our bodies in such things as clapping, raising our hands, shouting and dancing. The Psalms teach us to use instruments and to call on everything that has breath to praise the Lord. We do not think that being truly Reformed means to only use a Northern European 16th century cerebral style and functional order to worship God.

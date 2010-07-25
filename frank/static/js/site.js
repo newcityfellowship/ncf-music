@@ -1,5 +1,6 @@
 $(document).ready(function (){
   
+  $('#nav #homelink').bind('click', function(){window.location = '/';});
   
   $('#utilnav ul li.search a').bind('click', function(){
     $('#utilnav .search .searchbox').animate({
@@ -10,7 +11,7 @@ $(document).ready(function (){
   
   $('#header.home').css('background-image', 'url('+randomHomeHeaderImageUrl()+')');
   
-})
+});
 
 function randomHomeHeaderImageUrl(){
   var numberofavailableimages = 14;

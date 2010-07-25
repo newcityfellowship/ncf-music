@@ -69,11 +69,21 @@ break
 #header.interior
   height: 273px
 
+#header.about
+  background-image: url(/images/about-hero.jpg)
+
+
 #nav
   background-image: url(/images/nav-bg.png)
   background-repeat: no-repeat
   background-position: left top
   height: 53px
+
+#nav #homelink
+  float: left
+  width: 295px
+  height: 50px
+  cursor: pointer
 
 #nav ul
   float: right
@@ -92,7 +102,7 @@ break
   color: #333333
   font-weight: bold
 
-#nav ul li a:hover
+#nav ul li a:hover, #nav ul li a.selected
   color: #bc5400
 
 #utilnav
@@ -156,6 +166,24 @@ break
 #content
   margin-top: 20px
   margin-bottom: 0px
+
+#content
+  line-height: 18px
+
+#content .articlebody p
+  margin-bottom: 15px
+
+h2.pagename
+  text-transform: uppercase
+  color: #bc5400
+  font-size: 20px
+  margin-bottom: 17px
+
+.textlogo
+  color: #333333
+
+.textlogo strong
+  font-weight: bold
 
 .title
   background-image: url(/images/title-bg.png)
@@ -298,3 +326,39 @@ break
   text-transform: uppercase
   font-size: 14px
   font-weight: bold
+
+#content.interior .colphoto
+  float: left
+
+#content.about .articlebody
+  margin-left: 210px
+  margin-right: 290px
+
+.navcol
+  width: 270px
+  background-color: #eeeeee
+
+.navcol.contact
+  float: right
+
+.navcol h3
+  font-size: 14px
+  font-weight: bold
+
+.navcol
+  font-size: 12px
+
+.navcol li
+  padding-left: 12px
+  padding-right: 12px
+  padding-top: 7px
+  padding-bottom: 7px
+  border-bottom: 1px solid #DEDEDE
+
+.navcol .email a
+  text-decoration: none
+  color: #00796c
+
+.navcol .email a:hover
+  text-decoration: underline
+  
