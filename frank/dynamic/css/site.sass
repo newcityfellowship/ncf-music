@@ -42,6 +42,8 @@ p, h3, h3 a
   margin-left: auto
   margin-right: auto
 
+
+
 #footwrap
   background-image: url(/images/footback.png)
   background-repeat: no-repeat
@@ -211,9 +213,24 @@ h2.pagename
   height: 20px
   border: none
   float: left
-  background-color: #333333
   margin-top: 5px
   margin-right: 10px
+  cursor: pointer
+
+.audioplay:hover
+  background-color: #02786A
+
+.playing
+  background-image: url(/images/play.png)
+  background-color: #02786A
+  background-position: center center
+  background-repeat: no-repeat
+
+.paused
+  background-image: url(/images/pause.png)
+  background-color: #333333
+  background-position: center center
+  background-repeat: no-repeat
 
 .headercallout li
   padding-left: 10px
@@ -375,4 +392,36 @@ h2.pagename
 
 .intro p
   margin-right: 210px
-  
+
+.listen .aggregation
+  width: 760px
+
+.aggregation li .audioplay
+  margin-bottom: 15px
+
+.aggregation li
+  margin-bottom: 15px
+  padding-bottom: 15px
+  border-bottom: 1px solid #8E8E8E
+
+.aggregation li h3
+  color: #333333
+  font-size: 15px
+  font-weight: bold
+  float: left
+
+.audioplayer
+  border: 1px solid #8E8E8E
+  color: #8E8E8E
+  width: 250px
+   
+.details
+  color: #666666
+  text-transform: uppercase
+  font-size: 10px
+  height: 10px
+  line-height: 10px
+  font-weight: bold
+
+.details a
+  color: #666666
