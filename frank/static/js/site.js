@@ -23,6 +23,31 @@ $(document).ready(function (){
     toexpand.slideToggle('slow');
   });
   
+  //setup the audio players
+  $('.mp3holder').each(function(item){
+    console.log(this);
+    var mp3file = $(this).attr('rel');
+    $(this).jPlayer( {
+      ready: function () {
+        console.log('setting up player for song: ' + mp3file);
+        mp3file && this.element.jPlayer("setFile", mp3file); // Defines the mp3
+      }
+    });
+  });
+  
+  //setup the click handlers for the play buttons
+  $('.audioplay').click(function(){
+    var toplay = $("#" + $(this).attr('rel'));
+    if(toplay.jPlayer( "getData", "diag.isPlaying")){
+      toplay.jPlayer("pause");
+      $(this).removeClass('playing').addClass('paused');
+    }
+    else{
+      toplay.jPlayer("play");
+      $(this).removeClass('paused').addClass('playing');
+    }
+  });
+  
 });
 
 function randomHomeHeaderImageUrl(){
