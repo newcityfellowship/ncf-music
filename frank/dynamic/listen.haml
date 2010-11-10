@@ -55,7 +55,7 @@
         %span
           %a{:href=>'#'}= 'New City Fellowship, Glenwood'
         %span= ' | '
-        %span= 'View Song Info'
+        %span{:class=>'expander'}= 'View Song Info &#x2B07;  &#x2B06;'
       %div{:class=>'extendeddetails'}
       %div{:class=>'break'}
     %li
@@ -74,6 +74,42 @@
         %span
           %a{:href=>'#'}= 'New City Fellowship, Glenwood'
         %span= ' | '
-        %span= 'View Song Info'
+        %span{:class=>'expander'}= 'View Song Info &#x2B07;'
       %div{:class=>'extendeddetails'}
+        %table
+          %tr
+            %td{:class=>'category'}= 'Songwriter:'
+            %td{:class=>'listing'}
+              %a{:href=>'#'}= 'James Ward'
+          %tr
+            %td{:class=>'category'}= 'Producer:'
+            %td{:class=>'listing'}
+              %a{:href=>'#'}= 'Mike Mitchell'
+          %tr
+            %td{:class=>'category'}= 'Vocals:'
+            %td{:class=>'listing'}
+              %a{:href=>'#'}= 'Person One'
+              %span= ','
+              %a{:href=>'#'}= 'Person Two'
+              %span= ','
+              %a{:href=>'#'}= 'Person Three'
       %div{:class=>'break'}
+    %li
+      %button{:class=>'audioplay paused'}
+      %h3= 'Death Is Ended'
+      %div{:class=>'audioplayer'}
+        %div{:class=>'time'}= '00:53/3:24'
+        %div{:class=>'outerprogressbar'}
+          %div{:class=>'innerprogressbar'}
+      %div{:class=>'details'}
+        %span= 'June 3, 2010'
+        %span= ' | '
+        %span
+          %a{:href=>'#'}= 'James Ward'
+        %span= ' | '
+        %span
+          %a{:href=>'#'}= 'New City Fellowship, Glenwood'
+        %span= ' | '
+        %span{:class=>'expander'}= 'View Song Info &#x2B07;'
+      %div{:class=>'extendeddetails'}
+      %div{:class=>'break'}      
