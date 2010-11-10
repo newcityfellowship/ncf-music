@@ -11,6 +11,18 @@ $(document).ready(function (){
   
   $('#header.home').css('background-image', 'url('+randomHomeHeaderImageUrl()+')');
   
+  //setup the click handlers for the expanders
+  $('.expander').click(function(){
+    var toexpand = $("#" + $(this).attr('rel'));
+    if(toexpand.css('display') == 'none'){
+      $(this).html('Hide Song Info &#x2B06;');
+    }
+    else{
+      $(this).html('View Song Info &#x2B07;');
+    }
+    toexpand.slideToggle('slow');
+  });
+  
 });
 
 function randomHomeHeaderImageUrl(){
