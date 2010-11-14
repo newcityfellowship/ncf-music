@@ -42,7 +42,7 @@
       %button{:class=>'audioplay paused'}
       %h3= 'Death Is Ended'
       %div{:class=>'audioplayer'}
-        %div{:class=>'time'}= '00:53/3:24'
+        %div{:class=>'time'}= ''
         %div{:class=>'outerprogressbar'}
           %div{:class=>'innerprogressbar'}
         
@@ -63,7 +63,7 @@
       %h3= 'Death Is Ended'
       %div{:class=>'audioplayer'}
         %div{:class=>'mp3holder',:rel=>'http://www.largesound.com/ashborytour/sound/brobob.mp3',:id=>'song234'}
-        %div{:class=>'time'}= '00:53/3:24'
+        %div{:class=>'time'}= ''
         %div{:class=>'outerprogressbar'}
           %div{:class=>'innerprogressbar'}
       %div{:class=>'details'}
@@ -99,7 +99,7 @@
       %button{:class=>'audioplay paused'}
       %h3= 'Death Is Ended'
       %div{:class=>'audioplayer'}
-        %div{:class=>'time'}= '00:53/3:24'
+        %div{:class=>'time'}= ''
         %div{:class=>'outerprogressbar'}
           %div{:class=>'innerprogressbar'}
       %div{:class=>'details'}
@@ -113,4 +113,18 @@
         %span= ' | '
         %span{:class=>'expander'}= 'View Song Info &#x2B07;'
       %div{:class=>'extendeddetails'}
-      %div{:class=>'break'}      
+      %div{:class=>'break'}
+    %li{:class=>'last'}  
+      %div{:id=>'pagination'}
+        %div{:class=>'first inactive'}= 'first'
+        %div{:class=>'previous inactive'}= '&lt; previous'
+        %div{:class=>'pages'}
+          %span= 'page '
+          %span{:class=>'number'}= '1'
+          %span= ' of '
+          %span{:class=>'number'}= '20'
+        %div{:class=>'next'}
+          %a{:href=>"#"}= 'next &gt;'
+        %div{:class=>'last'}
+          %a{:href=>"#"}= 'last'
+        %div{:class=>'break'}

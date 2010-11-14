@@ -414,15 +414,19 @@ h2.pagename
   margin-top: 3px
   
 .audioplayer
-  width: 240px
+  width: 300px
+  height: 25px
   float: left
   margin-left: 10px
 
 .audioplayer .time
   float: right
+  text-align: left
+  width: 100px
   color: #8E8E8E
   font-size: 10px
   margin-top: 4px
+  font-style: italic
 
 .audioplayer .outerprogressbar
   border: 1px solid #DDDDDD
@@ -434,7 +438,7 @@ h2.pagename
 
 .audioplayer .outerprogressbar .innerprogressbar
   background-color: #C5C5C5
-  width: 50%
+  width: 0%
   height: 100%
 
 .aggregation li .details
@@ -467,11 +471,55 @@ h2.pagename
   font-size: 11px
   padding-top: 15px
   display: none
+  
 
 .extendeddetails table tr td.category
   text-transform: uppercase
   color: #BD5500
-  font-weight: normal
+  font-weight: bold
   padding-right: 7px
-  letter-spacing: 0px
-  
+  font-family: 'PT Sans Narrow'
+  font-size: 13px
+
+#pagination
+  font-family: 'PT Sans Narrow'
+  float: right
+  font-weight: bold
+  font-size: 12px
+  color: #343434
+  text-transform: uppercase
+  letter-spacing: -0px
+
+#pagination div
+  float: left
+
+#pagination .pages
+  border: 1px solid #E4E4E4
+  padding-left: 3px
+  padding-right: 3px
+  margin-left: 12px
+  margin-right: 12px
+
+#pagination .pages .number
+  color: #BE5119
+
+#pagination .next, #pagination .previous, #pagination .first, #pagination .last
+  background-color: #EEEEEE
+  padding-left: 3px
+  padding-right: 3px
+
+#pagination .next a, #pagination .previous a, #pagination .first a, #pagination .last a
+  text-decoration: none
+  color: #343434
+
+#pagination .next a:hover, #pagination .previous a:hover, #pagination .first a, #pagination .last a:hover
+  color: #00796c
+
+#pagination .previous, #pagination .last
+  margin-left: 5px
+
+.aggregation li.last
+  border: none
+
+#pagination .inactive
+  color: #999999

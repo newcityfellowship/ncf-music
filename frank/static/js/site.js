@@ -39,11 +39,11 @@ $(document).ready(function (){
     
     mp3holder.jPlayer("onProgressChange", function(lp,ppr,ppa,pt,tt) {
       progressbar.css('width', ppa+"%");
-      timeinfo.html(Math.round(pt/1000) + "/" + Math.round(tt/1000));
+      timeinfo.html(convertMillsecToMinutes(pt) + " / " + convertMillsecToMinutes(tt));
     });
     
     mp3holder.jPlayer("onSoundComplete", function() {
-      timeinfo.html('0/0');
+      timeinfo.html('');
       progressbar.css('width', "0%");
       playbutton.removeClass('playing').addClass('paused');
     });
@@ -64,6 +64,13 @@ $(document).ready(function (){
   });
   
 });
+
+function convertMillsecToMinutes(millsecs){
+  var totalseconds = Math.floor(millsecs/1000);
+  var minutes = Math.floor(totalseconds/60);
+  var seconds = totalseconds % 60;
+  return minutes + ":" + seconds;
+}
 
 function randomHomeHeaderImageUrl(){
   var numberofavailableimages = 14;
