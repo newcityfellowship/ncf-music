@@ -1,0 +1,55 @@
+%div{:id => 'header', :class => 'interior listen'} 
+  #utilnav
+    %ul
+      %li{:class => 'search'}
+        %a{:href => '#'}= 'Search'
+        %div{:class=>'searchbox'}
+          %form{:method=>'GET', :action=>'#'}
+            %input{:type=>'text',:name=>'q'}
+      %li
+        %a{:href => '#'}= 'Newsletter Signup'
+  #nav
+    #homelink
+    %ul
+      %li
+        %a{:href => '/about'}= 'About'
+      %li
+        %a{:href => '/listen'}= 'Listen'
+      %li
+        %a{:href => '/watch',:class=>'selected'}= 'Watch'
+      %li
+        %a{:href => '/learn'}= 'Learn'
+      %li
+        %a{:href => '/songs'}= 'Songs'
+      %li
+        %a{:href => '/contributors'}= 'Contributors'
+      %li
+        %a{:href => '/events'}= 'Events'
+
+%div{:id => 'content',:class=>'interior watch'}
+  %div{:id=> 'mainvideo'}
+    <object width="640" height="360"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6102370&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6102370&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="360"></embed></object>
+  %h2{:class=>'pagename'}
+    Watch
+  %div{:class=> 'intro'}
+    %p
+      Our worship seeks to be cross-cultural yet flowing out of our Reformed tradition. This means that we understand God to be the audience of our worship. We seek to please Him. Our understanding of the "Regulative Principal of Worship" is that all that we can do in worship must be biblical. We believe that we are to be courageous to use all of ourselves in worship, so we follow the teachings of the Psalms to use our bodies in such things as clapping.
+  %div{:id=> 'nowplaying'}
+    now playing content goes here
+  %div{:class=>'break'}
+  %div{:class=> 'relatedvideos'}
+    related videos go here
+  
+  %div{:id=>'pagination'}
+    %div{:class=>'first inactive'}= 'first'
+    %div{:class=>'previous inactive'}= '&lt; previous'
+    %div{:class=>'pages'}
+      %span= 'page '
+      %span{:class=>'number'}= '1'
+      %span= ' of '
+      %span{:class=>'number'}= '20'
+    %div{:class=>'next'}
+      %a{:href=>"#"}= 'next &gt;'
+    %div{:class=>'last'}
+      %a{:href=>"#"}= 'last'
+  %div{:class=>'break'}
