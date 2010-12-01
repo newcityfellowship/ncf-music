@@ -1,7 +1,6 @@
 html
   height: 100%
 
-
 body
   color: #333
   font-family: Helvetica, Arial
@@ -10,7 +9,8 @@ body
   background-repeat: no-repeat
   background-position: center top
   background-color: #c8c8c8
-
+  min-height: 100%
+  
 h3, h3 a
   font-size: 18px
   font-weight: bold
@@ -24,18 +24,16 @@ p, h3, h3 a
 .break
   clear: both
 
-#wrapper,#footer
+#wrapper
   width: 990px
   background-color: #FFFFFF
   margin-left: auto
   margin-right: auto
   margin-top: 0
   margin-bottom: 0
-  padding-bottom: 10px
   border-left: 5px solid #e8e8e8
   border-right: 5px solid #e8e8e8
   border-top: none
-  border-bottom: none
 
 #header, #content, #footwrap
   width: 950px
@@ -57,7 +55,8 @@ p, h3, h3 a
 #footer
   text-align: right
   border-top: 2px solid #CBCBCB
-  margin-top: 0px
+  margin-top: 10px
+  padding-bottom: 10px
 
 #header
   background-repeat: no-repeat
@@ -645,3 +644,6 @@ h2.pagename
 .catname
   text-transform: uppercase
   font-weight: bold
+
+.collapsed .subnavlist
+  display: none

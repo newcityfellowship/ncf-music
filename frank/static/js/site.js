@@ -63,6 +63,20 @@ $(document).ready(function (){
     }
   });
   
+  
+  //setup the side nav accordian
+  $('.navexpander').click(function(){
+    var navsection = $(this).parent().parent();
+    if($(this).html() == '+'){
+      navsection.find('.subnavlist').slideDown('slow');//removeClass('collapsed');
+      $(this).html('-');
+    }
+    else{
+      navsection.find('.subnavlist').slideUp('slow');//addClass('collapsed');
+      $(this).html('+');
+    }
+  });
+  
 });
 
 function convertMillsecToMinutes(millsecs){
