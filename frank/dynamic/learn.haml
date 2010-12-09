@@ -1,0 +1,134 @@
+%div{:id => 'header', :class => 'interior listen'} 
+  #utilnav
+    %ul
+      %li{:class => 'search'}
+        %a{:href => '#'}= 'Search'
+        %div{:class=>'searchbox'}
+          %form{:method=>'GET', :action=>'#'}
+            %input{:type=>'text',:name=>'q'}
+      %li
+        %a{:href => '#'}= 'Newsletter Signup'
+  #nav
+    #homelink
+    %ul
+      %li
+        %a{:href => '/about'}= 'About'
+      %li
+        %a{:href => '/listen'}= 'Listen'
+      %li
+        %a{:href => '/watch'}= 'Watch'
+      %li
+        %a{:href => '/learn',:class=>'selected'}= 'Learn'
+      %li
+        %a{:href => '/songs'}= 'Songs'
+      %li
+        %a{:href => '/contributors'}= 'Contributors'
+      %li
+        %a{:href => '/events'}= 'Events'
+
+%div{:id => 'content',:class=> 'interior learn'}
+  %div{:id=> 'left-nav'}
+    %div{:class=> 'title'}
+      %span= 'Learn'
+    %ul{:class=> 'topnavlist'}
+      %li{:class=> 'navsection'}
+        %div{:class=> 'topcat'}
+          %div{:class=> 'navexpander'}= '-'
+          %div{:class=> 'catname selected'}
+            %a{:href=> '#'}= 'Sources'
+        %ul{:class=> 'subnavlist'}
+          %li
+            %a{:href=> '#'}= 'Item one is sortof a long one'
+          %li
+            %a{:href=> '#'}= 'This second one aint too short'
+          %li
+            %a{:href=> '#'}= 'Same deal with the forth'
+      %li{:class=> 'navsection collapsed'}
+        %div{:class=> 'topcat'}
+          %div{:class=> 'navexpander'}= '+'
+          %div{:class=> 'catname'}
+            %a{:href=> '#'}= 'Tutorials'
+        %ul{:class=> 'subnavlist'}
+          %li
+            %a{:href=> '#'}= 'item one'
+          %li
+            %a{:href=> '#'}= 'item two'
+          %li
+            %a{:href=> '#'}= 'item three'
+
+
+  %div{:id=> 'maincontent'}    
+    %h2{:class=>'pagename'}
+      Learn
+    %ul{:class=>'aggregation'}
+      %li
+        %a{:href=>'#'}
+          %img{:class => 'thumb', :src => 'http://b.vimeocdn.com/ts/219/572/21957200_200.jpg'}
+        %h3{:class => 'nofloat'}= 'Finding Common Ground'
+        %div{:class=>'details'}
+          %span= 'June 3, 2010'
+          %span= ' | '
+          %span
+            %a{:href=>'#'}= 'James Ward'
+          %span= ' | '
+          %span
+            %a{:href=>'#'}= 'New City Fellowship, Glenwood'
+          %span= ' | '
+          %span= 'Duration 20:13'
+        %div{:class=>'teaser'}
+          %p
+            Our worship seeks to be cross-cultural yet flowing out of our Reformed tradition. This means that we understand God to be the audience of our worship. We seek to please Him. Our understanding of the "Regulative Principal of Worship" is that all that we can do in worship must be biblical. We believe that we are to be courageous to use all of ourselves in worship, so we follow the teachings of the Psalms to use our bodies in such things as clapping.    
+      %li
+        %h3= 'Finding Common Ground'
+        %div{:class=>'break'}
+        %div{:class=>'details'}
+          %span= 'June 3, 2010'
+          %span= ' | '
+          %span
+            %a{:href=>'#'}= 'James Ward'
+          %span= ' | '
+          %span
+            %a{:href=>'#'}= 'New City Fellowship, Glenwood'
+          %span= ' | '
+          %span= 'Duration 20:13'
+        %div{:class=>'break'}
+        %div{:class=>'teaser'}
+          %p
+            Our worship seeks to be cross-cultural yet flowing out of our Reformed tradition. This means that we understand God to be the audience of our worship. We seek to please Him. Our understanding of the "Regulative Principal of Worship" is that all that we can do in worship must be biblical. We believe that we are to be courageous to use all of ourselves in worship, so we follow the teachings of the Psalms to use our bodies in such things as clapping.    
+      %li
+        %button{:class=>'audioplay paused',:rel=>'song234',:id=>'playsong234'}
+        %h3{:class=>'floater'}= 'Death Is Ended'
+        %div{:class=>'audioplayer'}
+          %div{:class=>'mp3holder',:rel=>'http://www.largesound.com/ashborytour/sound/brobob.mp3',:id=>'song234'}
+          %div{:class=>'time'}= ''
+          %div{:class=>'outerprogressbar'}
+            %div{:class=>'innerprogressbar'}
+        %div{:class=>'details floater'}
+          %span= 'June 3, 2010'
+          %span= ' | '
+          %span
+            %a{:href=>'#'}= 'James Ward'
+          %span= ' | '
+          %span
+            %a{:href=>'#'}= 'New City Fellowship, Glenwood'
+        %div{:class=>'break'}
+        %div{:class=>'teaser indented'}
+          %p
+            Our worship seeks to be cross-cultural yet flowing out of our Reformed tradition. This means that we understand God to be the audience of our worship. We seek to please Him. Our understanding of the "Regulative Principal of Worship" is that all that we can do in worship must be biblical. We believe that we are to be courageous to use all of ourselves in worship, so we follow the teachings of the Psalms to use our bodies in such things as clapping.            
+    %div{:class=>'break'}
+    %div{:id=>'pagination'}
+      %div{:class=>'first inactive'}= 'first'
+      %div{:class=>'previous inactive'}= '&lt; previous'
+      %div{:class=>'pages'}
+        %span= 'page '
+        %span{:class=>'number'}= '1'
+        %span= ' of '
+        %span{:class=>'number'}= '5'
+      %div{:class=>'next'}
+        %a{:href=>"#"}= 'next &gt;'
+      %div{:class=>'last'}
+        %a{:href=>"#"}= 'last'
+    %div{:class=>'break'}
+  %div{:class=>'break'}
+  
+  

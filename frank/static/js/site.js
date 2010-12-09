@@ -32,7 +32,6 @@ $(document).ready(function (){
     var mp3file = mp3holder.attr('rel');
     mp3holder.jPlayer( {
       ready: function () {
-        console.log('setting up player for song: ' + mp3file);
         mp3file && this.element.jPlayer("setFile", mp3file); // Defines the mp3
       }
     });
